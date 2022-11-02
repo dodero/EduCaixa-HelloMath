@@ -1,3 +1,4 @@
+.DS_Store
 .metals/*
 .vscode/*
 notebooks/.ipynb_checkpoints/*.ipynb

@@ -60,7 +60,7 @@
 
 ## 1. Antecedentes: el curriculum de Matemáticas en la LOMLOE
 
-El curriculum reciente de la LOMLOE propuesto para la ESO y Bachillerato [RD 217/2002](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-4975) indica que la adquisición de las **competencias específicas** en Matemáticas se lleva a cabo a través de un conjunto de **saberes básicos** que integran conocimientos, destrezas y actitudes.
+El curriculum reciente de la LOMLOE propuesto para la ESO y Bachillerato [RD 217/2022](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-4975) indica que la adquisición de las **competencias específicas** en Matemáticas se lleva a cabo a través de un conjunto de **saberes básicos** que integran conocimientos, destrezas y actitudes.
 
 Los saberes se estructuran en torno al concepto de **sentido matemático**. Los distintos sentidos (numérico, medida, espacial, algebraico, estocástico, socioafectivo) permiten emplear los saberes básicos de una manera funcional. El RD 217/2022 también indica que:  
   
