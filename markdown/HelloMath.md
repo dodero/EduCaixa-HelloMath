@@ -26,15 +26,15 @@
 [4. Algoritmos](#algoritmos)
 
 - Variables
-  - [Las variables en los lenguajes de programación
-  - [Representar el tiempo
-  - [Representar objetos (no numéricos)
-  - [Ejemplo de algoritmo en Snap!: números pares e impares
+  - Las variables en los lenguajes de programación
+  - Representar el tiempo
+  - Representar objetos (no numéricos)
+  - Ejemplo de algoritmo en Snap!: números pares e impares
 - Funciones
-  - [Ejemplo de expresión funcional en Snap!
+  - Ejemplo de expresión funcional en Snap!
 - Otros ejemplos de lenguaje algebraico y lenguaje computacional
-  - [Python y sus bibliotecas
-  - [Unity y sus bibliotecas
+  - Python y sus bibliotecas
+  - Unity y sus bibliotecas
 
 [5. Lenguajes de programación](#lenguajes)
 
