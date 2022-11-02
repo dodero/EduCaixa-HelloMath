@@ -45,7 +45,7 @@
 [6. Abstracción](#abstraccion)
 
 - [RETO: Criba de Eratóstenes en Python](#eratostenes)
-- Diferencia semiótica](#semiotica)
+- Diferencia semiótica
 
 [7. Trabajos futuros](#futuro)
 
@@ -572,8 +572,6 @@ Completar los ejemplos de **algoritmos** expresados en un lenguaje de programaci
 El ejemplo está disponible en `notebooks/Python_notebook_primes.ipynb`
 
 Las conversiones entre registros distintos (del lenguaje natural al simbólico) son distintas si la conversión es hacia un lenguaje de programación o hacia una notación algebraica. También serán distintos en función de si el lenguaje de programación tiene un estilo imperativo tradicional o si permite la programación funcional, de corte más algebraico.
-
-<div id="semiotica"/>
 
 ### Diferencias semióticas
 
