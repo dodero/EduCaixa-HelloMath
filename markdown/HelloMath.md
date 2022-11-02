@@ -5,49 +5,54 @@
 *La mejora de las habilidades de pensamiento computacional puede variar según el lenguaje de programación elegido. La ponencia tratará sobre la problemática de los conceptos y prácticas del pensamiento computacional, tales como la abstracción y la algoritmia, así como su puesta en práctica a través de los distintos paradigmas de programación informática. También se discutirá la influencia de estos conceptos en los saberes matemáticos y el pensamiento algebraico, a través de ejemplos prácticos.*  
 
 [1. Antecedentes: el curriculum de Matemáticas en la LOMLOE](#antecedentes)
-  - [El sentido algebraico](#markdown-mermaid)
-  - [El pensamiento computacional](#markdown-mermaid)
+
+- El sentido algebraico
+- El pensamiento computacional
 
 [2. La resolución de problemas](#resolucion-problemas)
-  - [Resolución de problemas en matemáticas e informática](#markdown-mermaid)
-  - [Resolución de problemas en tecnología](#markdown-mermaid)
-  - [La transferencia de aprendizaje](#markdown-mermaid)
+
+- Resolución de problemas en matemáticas e informática
+- Resolución de problemas en tecnología
+- La transferencia de aprendizaje
 
 [3. El pensamiento computacional](#pensamiento)
-  - [Conceptos y prácticas del pensamiento computacional](#markdown-mermaid)
-  - [El pensamiento computacional en Matemáticas](#markdown-mermaid)
-  - [Informática y pensamiento computacional](#markdown-mermaid)
-  - [Aspectos fundamentales de la informática](#markdown-mermaid)
-  - [Pensamiento algebraico](#markdown-mermaid)
+
+- Conceptos y prácticas del pensamiento computacional
+- El pensamiento computacional en Matemáticas
+- Informática y pensamiento computacional
+- Aspectos fundamentales de la informática
+- Pensamiento algebraico
 
 [4. Algoritmos](#algoritmos)
-  - [Variables](#markdown-mermaid)
-    - [Las variables en los lenguajes de programación](#markdown-mermaid)
-    - [Representar el tiempo](#markdown-mermaid)
-    - [Representar objetos (no numéricos)](#markdown-mermaid)
-    - [Ejemplo de algoritmo en Snap!: números pares e impares](#markdown-mermaid)
-  - [Funciones](#markdown-mermaid)
-    - [Ejemplo de expresión funcional en Snap!](#markdown-mermaid)
-  - [Otros ejemplos de lenguaje algebraico y lenguaje computacional](#markdown-mermaid)
-    - [Python y sus bibliotecas](#markdown-mermaid)
-    - [Unity y sus bibliotecas](#markdown-mermaid)
+
+- Variables
+  - [Las variables en los lenguajes de programación
+  - [Representar el tiempo
+  - [Representar objetos (no numéricos)
+  - [Ejemplo de algoritmo en Snap!: números pares e impares
+- Funciones
+  - [Ejemplo de expresión funcional en Snap!
+- Otros ejemplos de lenguaje algebraico y lenguaje computacional
+  - [Python y sus bibliotecas
+  - [Unity y sus bibliotecas
 
 [5. Lenguajes de programación](#lenguajes)
-  - [Sentido algebraico en los lenguajes de programación informática](#markdown-mermaid)
-  - [Programación y codificación](#markdown-mermaid)
-  - [Lenguaje algebraico y programación](#markdown-mermaid)
+
+- Sentido algebraico en los lenguajes de programación informática
+- Programación y codificación
+- Lenguaje algebraico y programación
 
 [6. Abstracción](#abstraccion)
-  - [RETO: Criba de Eratóstenes en Python](#eratostenes)
-  - [Diferencia semiótica](#semiotica)
+
+- [RETO: Criba de Eratóstenes en Python](#eratostenes)
+- Diferencia semiótica](#semiotica)
 
 [7. Trabajos futuros](#futuro)
-  - [Organización de datos](#markdown-mermaid)
-  - [Depuración de errores](#markdown-mermaid)
-  - [Análisis y descomposición](#markdown-mermaid)
-  - [Identificación de patrones](#markdown-mermaid)
 
-[8. Conclusiones](#conclusiones)
+- [Organización de datos
+- [Depuración de errores
+- [Análisis y descomposición
+- [Identificación de patrones
 
 ---
 
@@ -129,7 +134,7 @@ En Matemáticas, resolver un problema implica «encontrar un resultado definitiv
 
 La interrelación entre el **pensamiento matemático** y el pensamiento computacional a la hora de resolver un problema se ha descrito de la siguiente forma ([Kallia et al., 2021](https://doi.org/10.1080/14794802.2020.1852104)):
 
-![](../assets/kallia-problemsolving.png)
+![Problem solving](../assets/kallia-problemsolving.png)
 
 1. Trasladar una situación o problema real a un modelo matemático y luego a un modelo computacional, fundamentado en las capacidades de abstracción, modelado e identificación de patrones.
 2. Razonar y trabajar con los conceptos y prácticas propias de las matemáticas y de la informática.
@@ -213,7 +218,7 @@ En este seminario intentaremos abordar algunos de esos *conceptos propios de la 
 
 La **motivación** es que quizá estos conceptos puedan ayudar a, como indica la Dra. *Carol Fletcher*, directora ejecutiva del [EPIC](https://www.tacc.utexas.edu/epic) del *Texas Advanced Computing Center* de la Universidad de Texas en Austin en la [CSEdCon 2022](https://web.cvent.com/event/65f0fab7-bd0c-4014-a8a0-beb842f388ae/websitePage:3a9a071e-8ef7-43e7-bb7c-b909dbea749d):  
   
-> Hay que dejar de usar las matemáticas como la guardiana de la informática y, en su lugar, usar la informática como vía de acceso al éxito en matemáticas — *Carol Fletcher*, [CSEd conference](https://twitter.com/szircher/status/1572610370237349888?s=20&t=uRPY8N5VJt4LC6DumQ5s1w) 
+> Hay que dejar de usar las matemáticas como la guardiana de la informática y, en su lugar, usar la informática como vía de acceso al éxito en matemáticas — *Carol Fletcher*, [CSEd conference](https://twitter.com/szircher/status/1572610370237349888?s=20&t=uRPY8N5VJt4LC6DumQ5s1w)
 
 También hay un [tweet](https://twitter.com/deliprao/status/1575173619478450176?s=20&t=4VLkh9kTFHh1nvPCSG2-Jw) interesante de Delip Rao al respecto.
 
@@ -252,7 +257,7 @@ Se ha investigado mucho en la intersección del pensamiento computacional y el *
 - Sobre los **algoritmos**:  
     > Un algoritmo […] es una secuencia finita de instrucciones ejecutables que permite hallar un resultado definido para una determinada clase de problemas — ([Brousseau, 1997, p. 129](https://doi.org/10.1007/0-306-47211-2)).  
 
-  En esta definición de *algoritmo* ya se nota un cierto olor a Álgebra 
+  En esta definición de *algoritmo* ya se nota un cierto olor a Álgebra
 
 - Sobre los **lenguajes (de programación)**:
   > El grado de mejora de los estudiantes en sus habilidades de pensamiento computacional varía en función del lenguaje de programación que aprenden. —([Park & Shin, 2019](https://doi.org/10.3390/electronics8111269))  
@@ -356,7 +361,7 @@ A continuación se muestran dos versiones de un procedimiento `evens(data)` que 
 
 En conclusión, las críticas anteriores al «lenguaje de expresión del pensamiento computacional» frente al lenguaje de expresión del pensamiento algebraico están basadas en una visión algo estrecha de lo que es el pensamiento computacional y de lo que es la programación informática.  
 
-El lenguaje informático de programación con que se expresa una computación puede ser lo suficientemente rico y diverso como para aliviar las diferencias semióticas expresadas por ([Bråtig & Kilham, 2021](https://doi.org/10.1080/10986065.2020.1779012)) en cuanto al concepto de variable. 
+El lenguaje informático de programación con que se expresa una computación puede ser lo suficientemente rico y diverso como para aliviar las diferencias semióticas expresadas por ([Bråtig & Kilham, 2021](https://doi.org/10.1080/10986065.2020.1779012)) en cuanto al concepto de variable.
 
 La expresión `for each item in data` es  más cercana a una expresión algebraica (se parece algo más a la notación $\sum\limits_{i=1}^{n}$) que la expresión `for index = 1 to lenght of data`.
 
@@ -372,12 +377,11 @@ Esta descripción de *función* se parece mucho a la descripción de un procedim
 
 ([Bråtig & Kilham, 2021](https://doi.org/10.1080/10986065.2020.1779012)) explica que la diferencia fundamental entre una función matemática y una función en programación es que la segunda, además de devolver un valor, puede tener efectos colaterales: la función modifica el estado de su entorno local o presenta una interacción observable con el mundo exterior.  
 
-
 Esto es cierto solo para la concepción restrictiva de la programación informática que el pensamiento computacional ha adoptado, basada en una concepción limitada de lo que es una función en programación. Si se considera la programación imperativa (que es el enfoque tradicional presente en la definición misma del término de pensamiento computacional) o incluso la programación orientada a objetos (considerada por algunos como el enfoque natural para el aprendizaje de la programación), es cierto que las funciones pueden tener efectos colaterales. ¡Pero no es así en **programación funcional**! Que también es programación informática, solo que con un mayor sentido algebraico.
 
 De hecho, la programación funcional es el enfoque primigenio para la programación informática. Está basada en el *lambda calculus* de [Alonzo Church](https://en.wikipedia.org/wiki/Alonzo_Church), el director de tesis de [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing), considerado padre de la Ciencia de la Computación. La programación funcional tiene un fuerte fundamento en los tipos de datos algebraicos y en ella las funciones no pueden tener efectos colaterales. El paradigma funcional de la programación tiene un fuerte sentido algebraico y es, fundamentalmente, programación informática.
 
-#### Ejemplo de expresión funcional en Snap!  
+#### Ejemplo de expresión funcional en Snap  
 
 [Snap!](https://people.eecs.berkeley.edu/~bh/byob/SnapManual.pdf) incluye como característica avanzada ([Brady et al., 2022](https://doi.org/10.1016/j.cola.2022.101156)), la posibilidad de definir funciones inspiradas en el *lambda calculus*, para manipular otras funciones y procedimientos como si fuesen datos (es decir, incorpora **funciones de orden superior** o lambdas).
 
@@ -445,7 +449,7 @@ Si se quiere ver la equivalencia entre ambos registros de expresión, consultar 
 
 #### Unity y sus bibliotecas
 
-En Unity 3D, un elemento algebraico muy usado para la programación en C\# de juegos son los [_quaternions_](https://en.wikipedia.org/wiki/Quaternion)  
+En Unity 3D, un elemento algebraico muy usado para la programación en C\# de juegos son los [*quaternions*](https://en.wikipedia.org/wiki/Quaternion)  
 
 Los quaternions proporcionan un sistema numérico que amplía el de los números complejos, con muchas aplicaciones a la mecánica en un espacio 3-dimensional.  
 
@@ -485,7 +489,7 @@ Estos lenguajes a veces están dotados de mecanismos para unas capacidades (e.g.
 
 Entonces, las *herramientas informáticas* habitualmente usadas para desplegar las habilidades de pensamiento computacional, ¿son las más adecuadas desde el punto de vista algebraico?  
 
-Visto desde otro punto de vista, para entender los conceptos y prácticas de pensamiento computacional, ¿basta con el pensamiento matemático y su sentido algebraico? Si las *herramientas informáticas* propuestas son limitadas en este sentido, ¿cómo se operacionaliza la expresión de la solución a un problema en un lenguaje distinto al algebraico, más limitado, que es el la programación imperativa? 
+Visto desde otro punto de vista, para entender los conceptos y prácticas de pensamiento computacional, ¿basta con el pensamiento matemático y su sentido algebraico? Si las *herramientas informáticas* propuestas son limitadas en este sentido, ¿cómo se operacionaliza la expresión de la solución a un problema en un lenguaje distinto al algebraico, más limitado, que es el la programación imperativa?
 
 ### Sentido algebraico en los lenguajes de programación informática  
 
