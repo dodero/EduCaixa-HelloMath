@@ -49,10 +49,10 @@
 
 [7. Trabajos futuros](#futuro)
 
-- [Organización de datos
-- [Depuración de errores
-- [Análisis y descomposición
-- [Identificación de patrones
+- Organización de datos
+- Depuración de errores
+- Análisis y descomposición
+- Identificación de patrones
 
 ---
 
