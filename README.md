@@ -15,7 +15,7 @@
 ### Práctica
 
 - El reto práctico consiste en la realización de un taller de programación para el cálculo de números primos, utilizando el lenguaje Python. En el taller se analizarán las características imperativas y funcionales del lenguaje de programación, en relación con el sentido algebraico del paradigma de programación utilizado.
-- El taller está disponible en un [Jupyter notebook](https://jupyter.org/), disponible en [Github](notebooks/Python_notebook_primes.ipynb), [MyBinder](https://mybinder.org/) y [Google Colab](https://colab.research.google.com/drive/1uwvrgkOcuZnykMV1twFeDpJu1Nkk5Boo?usp=sharing).
+- El taller está disponible en un [Jupyter notebook](https://jupyter.org/), disponible en [Github](notebooks/Python_notebook_primes.ipynb), [MyBinder](https://mybinder.org/v2/gh/dodero/EduCaixa-HelloMath/HEAD?labpath=notebooks%2FPython_notebook_primes.ipynb) y [Google Colab](https://colab.research.google.com/drive/1uwvrgkOcuZnykMV1twFeDpJu1Nkk5Boo?usp=sharing).
 
 #### Instrucciones
 
