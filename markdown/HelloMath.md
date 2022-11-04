@@ -124,7 +124,7 @@ En Matemáticas, resolver un problema implica «encontrar un resultado definitiv
 
 - Para estudiar la diferencia entre resolver un problema en matemáticas y resolverlo en programación informática, ([Bråtig & Kilham, 2021](https://doi.org/10.1080/10986065.2020.1779012)) usan ejemplos en los que los estudiantes resuelven una tarea simple de programación por bloques a través de un juego de programación llamado [Lightbot](https://lightbot.com/).
 
-![](../assets/lightbot.jpeg =600x450)
+  ![](../assets/lightbot.jpeg)
   > Lightbot es un juego de puzzle para enseñar la lógica más elemental de la programación informática (secuencias, bucles, condicionales, etc.)
 
 - Luego explican que, con las tareas simples de programación que plantea el juego, se aprende a resolver un problema específico, pero no «una determinada clase de problemas».
@@ -289,7 +289,7 @@ Empecemos por los conceptos de **variable** y **función**, donde se encuentran 
 
 Para analizar el concepto de variable, emplearemos el ejemplo que proponen ([Bråtig & Kilham, 2021](https://doi.org/10.1080/10986065.2020.1779012)) de **multiplicación como sumas sucesivas** en Scratch, empleando programación imperativa por bloques:  
 
-![](../assets/scratch-variables.png =650x493)
+![](../assets/scratch-variables.png)
 
 La descomposición algebraica de la multiplicación como sumas sucesivas es la siguiente:  
 
@@ -353,11 +353,11 @@ A continuación se muestran dos versiones de un procedimiento `evens(data)` que 
 
 - La *Versión 1* utiliza una variable `index` para representar  la (marca de conteo) que lleva la cuenta del número de elementos procesados de la lista. Esta implementación adolece del problema anterior descrito por ([Bråtig & Kilham, 2021](https://doi.org/10.1080/10986065.2020.1779012)) en el ejemplo de la multiplicación por sumas sucesivas: usa una variable `index` cuya expresión en el lenguaje de programación no tiene una correspondencia con la expresión algebraica del concepto equivalente.
 
-![image.png](../assets/snap-variable-index.png =296x219)  
+    ![image.png](../assets/snap-variable-index.png)  
 
 - La *Versión 2* elimina el problema semiótico de la variable para el recorrido en la lista, pues el lenguaje de Snap! permite la expresión de iteraciones sin necesidad de tener que idear una variable de iteración explícita para dicho propósito.  
 
-![image.png](../assets/snap-foreach.png =230x258)
+    ![image.png](../assets/snap-foreach.png)
 
 En conclusión, las críticas anteriores al «lenguaje de expresión del pensamiento computacional» frente al lenguaje de expresión del pensamiento algebraico están basadas en una visión algo estrecha de lo que es el pensamiento computacional y de lo que es la programación informática.  
 
@@ -389,7 +389,7 @@ Volvamos al ejemplo de `evens(data)` de la pág. 37 del manual de Snap!
 
 Además de las versiones imperativas anteriores, el lenguaje de Snap! permite implementar una versión basada en el paradigma de la programación funcional:
 
-![](../assets/snap-funcional.png =650x307)
+![](../assets/snap-funcional.png)
 
 En la implementación funcional, el bucle ha desaparecido. Se ha sustituido por:
 
