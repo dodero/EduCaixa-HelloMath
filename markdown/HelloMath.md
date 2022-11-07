@@ -291,7 +291,7 @@ Para analizar el concepto de variable, emplearemos el ejemplo que proponen ([Br�
 
 ![](../assets/scratch-variables.png)
 
-La descomposición algebraica de la multiplicación como sumas sucesivas es la siguiente:  
+En lenguaje algebraico, una multiplicación se puede expresar mediante sumas sucesivas a través de una serie de igualdades como las siguientes:
 
 ```text
     17 × 1 = 17 × 0 + 17 = 0 + 17 = 17
@@ -299,6 +299,17 @@ La descomposición algebraica de la multiplicación como sumas sucesivas es la s
     17 × 3 = 17 × 2 + 17 = 34 + 17 = 51
     17 × 4 = 17 × 3 + 17 = 51 + 17 = 68
     17 × 5 = 17 × 4 + 17 = 68 + 17 = 85
+    ...
+```
+
+Así, la descomposición algebraica de una cierta multiplicación como sumas sucesivas quedaría:
+
+```text
+17 × 5 = 17 × 4 + 17 =
+       = 17 × 3 + 17 + 17 =
+       = 17 × 2 + 17 + 17 + 17 =
+       = 17 × 1 + 17 + 17 + 17 + 17 =
+       = 17 × 0 + 17 + 17 = 17 + 17 + 17
 ```
 
 La solución de Scratch emplea las siguientes variables:  
@@ -308,9 +319,7 @@ La solución de Scratch emplea las siguientes variables:
 
 En la descomposición algebraica de la multiplicación como sumas suvesivas, insertar la variable `sum` en una línea separada imposibilitaría usar `sum` en otra línea (v.g. usar `sum` en las líneas 2 y 3 implicaría que `34` = `51`). Las variables `sum` y `count` solo sirven para seguir la pista del *proceso* realizado como parte del calculo.  
 
-En matemáticas, `count` suele representarse como una (marca de) conteo para llevar la cuenta del número de sumas repetidas realizadas. En cambio, en la programación imperativa usada por Scratch, se usa un trozo de memoria para el mismo propósito.  
-
-Compárese esto con la manera de representar algebraicamente una serie de expresiones del tipo:  
+En matemáticas, `count` suele representarse como una (marca de) conteo para llevar la cuenta del número de sumas repetidas realizadas. En cambio, en la programación imperativa usada por Scratch, se usa un trozo de memoria para el mismo propósito. Compárese esto con la manera de representar algebraicamente una serie de expresiones del tipo:  
 
 $\sum\limits_{i=1}^{n} a_i = a_1+a_2+...+a_n$
 
@@ -333,17 +342,22 @@ Muchos de los lenguajes de **programación con bloques**, como Scratch, siguen e
 
 El problema de la multiplicación por sumas sucesivas es un problema matemático y por ello debe emplear variables con una significación matemática (como desconocida, placeholder o variable). Sin embargo, el programa incluye una variable de un tipo diferente (el *contador*), que cambia a medida que el programa es ejecutado. Parece que este tipo de variable no se puede convertir fácilmente a una notación algebraica, pues la manera de representar esta idea es diferente en ambos registros (el algebraico y el de la programación imperativa).
 
-Esto sucede por usar une concepción tan limitada de lo que es la programación informática. Limitada hasta tal punto que puede causar una disonancia cuando se intenta enseñar matemáticas con el enfoque del *pensamiento computacional* utilizando Scratch. Pero esto no es así en todos los entornos de programación, como veremos a continuación con un ejemplo en **Snap!**.
+Esto sucede por usar una concepción tan limitada de lo que es la programación informática. Limitada hasta tal punto que puede causar una disonancia cuando se intenta enseñar matemáticas con el enfoque del *pensamiento computacional* utilizando Scratch. Pero esto no es así en todos los entornos de programación, como veremos a continuación con un ejemplo en **Snap!**.
 
-En programación **imperativa** tradicional, las instrucciones se ejecutan en orden. Cuando una instrucción asigna un nuevo valor a una variable, esto no constituye un caso nuevo, sino que simplemente se está cambiando el valor registrado en un determinado lugar en la memoria (de una cierta **máquina abstracta**) que corresponde a la variable.
+Podríamos hablar más sobre el concepto de variable en matemáticas e informática:
 
-#### Representar el tiempo
+- ¿Cómo representar la variación de variables *fluidas* que varían con respecto a otra variable (por ejemplo, a lo largo del tiempo)?
+- ¿Cómo representar valores no numéricos?
 
-> Esto puede interpretarse en términos de *tiempo*, en el sentido de que en programación imperativa las variables pueden cambiar su valor a lo largo del tiempo. En el álgebra abstracta no es fácil representar el aspecto *tiempo*, aunque la misma variable puede ser sustituida por valores diferentes que correspondan a casos independientes distintos. Si se quiere introducir la dimensión de **tiempo**, hay que acudir al **cálculo diferencial**. El cálculo diferencial fue ideado en tiempos de Leibniz para resolver problemas *cuando no existían ordenadores*. Incluso, un poco antes, Newton ideó el método de los **fluxions** para representar *cantidades fluidas* que varían. Hoy día tienen mayor éxito las representaciones computacionales discretas alternativas a las representaciones algebraicas del cálculo diferencial e integral para resolver los problemas en los que la dimensión *tiempo* está involucrada.
+#### Representar cantidades fluidas
+
+En programación imperativa, las variables pueden cambiar su valor a lo largo del tiempo. En el álgebra abstracta no es fácil representar el aspecto *tiempo*, aunque la misma variable puede ser sustituida por valores diferentes que correspondan a casos independientes distintos.
+
+Si se quiere introducir la dimensión de **tiempo**, hay que acudir al **cálculo diferencial**. El cálculo diferencial fue ideado en tiempos de Leibniz para resolver problemas *cuando no existían ordenadores*. Incluso, un poco antes, Newton ideó el método de los **fluxions** para representar *cantidades fluidas* que varían. Hoy día tienen un gran éxito las representaciones computacionales discretas, alternativas a las representaciones algebraicas del cálculo diferencial e integral para resolver los problemas en los que la dimensión *tiempo* está involucrada.
 
 #### Representar objetos (no numéricos)
 
-Las **variables** en programación, además de poder cambiar su valor durante la ejecución del programa, pueden albergar cosas *distintas a números*. Uno de los principios de la **programación orientada a objetos** es poder representar objetos y clases. También la programación funcional se apoya en los **tipos algebraicos** para representaciones simbólicas de cosas no numéricas.
+Las **variables** en programación también pueden albergar cosas *distintas a números*. Uno de los principios de la **programación orientada a objetos** es poder representar objetos y clases. También la programación funcional se apoya en los **tipos algebraicos** para representaciones simbólicas de cosas no numéricas.
 
 #### Ejemplo de algoritmo en Snap!: números pares e impares  
 
@@ -453,11 +467,9 @@ En Unity 3D, un elemento algebraico muy usado para la programación en C\# de ju
 
 Los quaternions proporcionan un sistema numérico que amplía el de los números complejos, con muchas aplicaciones a la mecánica en un espacio 3-dimensional.  
 
-Unity3D emplea un elemento de la biblioteca estándar en C\# llamado [`Quaternion`](https://docs.unity3d.com/ScriptReference/Quaternion.html) para representar rotaciones y los manipula a través de los [`Transform`](https://docs.unity3d.com/ScriptReference/Transform.html)  
+Unity3D emplea un elemento de la biblioteca estándar en C\# llamado [`Quaternion`](https://docs.unity3d.com/ScriptReference/Quaternion.html) para representar rotaciones y los manipula a través de los [`Transform`](https://docs.unity3d.com/ScriptReference/Transform.html). Un `Transform` en Unity describe la posición, rotación y escala de un objeto en el espacio 3-dimensional.  
 
-Un `Transform` en Unity describe la posición, rotación y escala de un objeto en el espacio 3-dimensional.  
-
-Si se quiere construir un juego tridimensional, quizá sea más conveniente aprender el lenguaje de Unity que el lenguaje algebraico de los quaternions.  
+Si se quiere construir un juego tridimensional, quizá sea más conveniente aprender el lenguaje de Unity que el lenguaje algebraico de los quaternions.
 
 ---
 
@@ -465,11 +477,13 @@ Si se quiere construir un juego tridimensional, quizá sea más conveniente apre
 
 ## 5. Lenguajes de programación  
 
-Una vez discutido el concepto de algoritmo y su expresión desde la perspectiva algebraica común a las matemáticas y a la informática, analizaremos con mayor profundidad la forma de expresión de la «resolución a un problema» en programación en general, y plantearemos ejemplos usando distintos **paradigmas de programación**: el imperativo, el orientado a objetos y el funcional.  
+Una vez discutido el concepto de algoritmo y su expresión desde la perspectiva algebraica común a las matemáticas y a la informática, analizaremos con mayor profundidad la forma de expresión de la «resolución a un problema» en programación en general, y plantearemos ejemplos usando el paradigma de programación imperativo y el funcional.  
 
 También resaltaremos la diferencia entre los **lenguajes de bloques** y los **lenguajes textuales**. Esta es una clasificación aparte, que no tiene que ver con el paradigma de programación, puesto que hay lenguajes de bloques que permiten expresiones usando el paradigma funcional (por ejemplo, Snap!) y otros que no (por ejemplo, Scratch). En general, todos los lenguajes de bloques siguen el paradigma imperativo, pero ninguno de ellos suele cumplir con el paradigma orientado a objetos en toda su extensión, como veremos más adelante.  
 
 ¿Por qué hacer este análisis? Porque la investigación sobre la eficacia de los lenguajes de bloques ha obtenido resultados interesantes respecto a la hipótesis de que la mejora de las habilidades de pensamiento computacional varía en función del **lenguaje de programación** con que éstas se aprenden. Esto está en línea con la opinión del matemático y físico holandés Edsger W. Dijkstra, quien dijo que «todos estamos moldeados por las herramientas con las que nos entrenamos».  
+
+### Lenguajes de bloques
 
 Si nos limitamos a los lenguajes de bloques, como propone la mayoría de enfoques que siguen las  pautas del *pensamiento computacional*, se plantean las preguntas siguientes:  
 
@@ -487,9 +501,19 @@ Esto puede estar influido por las características de los lenguajes de programac
 
 Estos lenguajes a veces están dotados de mecanismos para unas capacidades (e.g. control de flujo), pero adolecen de otros (e.g. programación funcional) o disponer de versiones bastante limitadas de algunos (e.g. paralelismo y sincronización).  
 
-Entonces, las *herramientas informáticas* habitualmente usadas para desplegar las habilidades de pensamiento computacional, ¿son las más adecuadas desde el punto de vista algebraico?  
+### Lenguaje de programación y pensamiento computacional
 
-Visto desde otro punto de vista, para entender los conceptos y prácticas de pensamiento computacional, ¿basta con el pensamiento matemático y su sentido algebraico? Si las *herramientas informáticas* propuestas son limitadas en este sentido, ¿cómo se operacionaliza la expresión de la solución a un problema en un lenguaje distinto al algebraico, más limitado, que es el la programación imperativa?
+El pensamiento computacional hemos visto que está clasificado dentro del **pensamiento algebraico**.
+
+> Relacionado con la resolución de problemas se encuentra el **pensamiento computacional**. Este incluye el análisis de datos, la organización lógica de los mismos, la **búsqueda de soluciones en secuencias de pasos ordenados** y la obtención de soluciones con instrucciones que puedan ser ejecutadas por una **herramienta tecnológica programable**, una persona o una combinación de ambas, lo cual amplía la capacidad de resolver problemas y promueve el uso eficiente de recursos digitales.
+
+Hemos visto que algunos de los lenguajes usados para desarrollar habilidades de pensamiento computacional (v.g. los lenguajes de bloques) pueden estar dotados de mecanismos para unas capacidades, pero adolecen de otros.
+
+Entonces, para entender los conceptos y prácticas del pensamiento computacional, ¿basta con el **sentido algebraico**? ¿Las *herramientas tecnológicas programables* del RD 217/2022 (término usado como eufemismo de *lenguaje de programación*) con que se despliegan habitualmente las habilidades de pensamiento computacional, ¿son las más adecuadas desde el punto de vista algebraico?  
+
+Los enfoques de pensamiento computacional que parten de **lenguajes de bloques** suelen seguir un paradigma imperativo (nótese lo de «búsqueda de soluciones en secuencias de pasos ordenados»), cuya expresión es muchas veces incompatible la notación para desarrollar el sentido algebraico.
+
+Visto desde otro punto de vista, para entender los conceptos y prácticas de pensamiento computacional, ¿basta con el pensamiento matemático y su sentido algebraico? Si las *herramientas tecnológicas programables* propuestas son limitadas en este sentido, ¿cómo se operacionaliza la expresión de la solución a un problema en un lenguaje distinto al algebraico, más limitado, que es el la programación imperativa?
 
 ### Sentido algebraico en los lenguajes de programación informática  
 
@@ -501,14 +525,7 @@ Si se usa un paradigma de programación no funcional (como el imperativo o el or
 
 Muchas veces, los conceptos y prácticas del pensamiento computacional se intentan operacionalizar a través de la **programación informática** o de la **codificación**. A este respecto, ([Armoni, 2016](https://doi.org/10.1145/3011071)) explica las anomalías en la educación en informática cuando se emplean indistintamente los términos Informática, Pensamiento Computacional, Programación y Codificación. No es lo mismo *Informática* que *programación*, ni es lo mismo *programación* que *codificación*. Aunque muchas veces se empleen erróneamente como sinónimos. De hecho, las referencias de la LOMLOE al concepto de pensamiento computacional cae muchas veces en este equívoco.
 
-### Lenguaje algebraico y programación
-
-En los enfoques actuales guiados por el *pensamiento computacional*, la introducción temprana de variables no numéricas va más allá del álgebra que se estudia en las escuelas (y del sentido algebraico propuesto en la LOMLOE), donde se enfatiza sobre todo en el aspecto numérico de las variables —En todo caso, en el sentido estadístico se resalta el valor de las variables categóricas como algo más allá de las variables numéricas.  
-
-- En programación imperativa, las variables cambian su valor durante la ejecución de un programa, reflejándose así este proceso.  
-- En álgebra, las variables varían cuando describen una relación.  
-  
-El rol de una variable es diferente en estos dos sistemas de representación: en programación imperativa, controlar el proceso y almacenar datos; en álgebra, expresar relaciones.  
+### Representación semiótica
 
 El procesamiento matemático, según ([Duval, 2006, p. 107](https://doi.org/10.1007/s10649-006-0400-z)), siempre «implica sustituir una representación semiótica por otra». Convertir el lenguaje natural a otro registro (por ejemplo, representar una «variable» de un lenguaje de programación en notación algebraica) requiere un conocimiento sobre a qué objeto se refiere la palabra «variable». Para los estudiantes, los distintos significados de una variable en álgebra ya es de por sí un reto ([Bush & Karp, 2013](https://doi.org/10.1016/j.jmathb.2013.07.002)). Así que añadir otro significado adicional relacionado con la programación informática es algo sobre lo que los profesores deben ser muy cuidadosos.
 
